@@ -4,8 +4,10 @@
 
 int main()
 {
-    int arr[5] = {1, 2, 3, 4, 5};
-    int *p = arr ;
-    printf("%d", *(p + 1), *(++p));
+    int x = 5, y = 10;
+    int *p = &x;
+    p = &y;
+    printf("%d", *p);
+
 
 }
