@@ -41,8 +41,6 @@ int main()
 
     printf("NULL\n");
 
-
-
     //free memory 
 
     free(head);
