@@ -23,7 +23,6 @@ void add_array(int **arr, size_t *size, int value)
 	temp[*size] = value;
 	(*size)++;
 
-
 	free(*arr);
 
 	//updating the pointer
@@ -46,20 +45,21 @@ int main()
 
 	int *arr = NULL;
 	size_t size = 0;
+	int i = 0;
 
 	while (1)
 	{
-
 		int value;
-		printf(" enter the number or type -1 to end: \n");
+		printf(" enter the number or type -1 to end( num you typing %d): \n", i++);
 		scanf("%d", &value);
 
 		if (value == -1)
 			break;
 
 		add_array(&arr, &size, value);
-		print_array(arr, size);
+		
 	}
+	print_array(arr, size);
 	free(arr);
 	return 0;
 }
