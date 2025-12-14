@@ -1,5 +1,13 @@
 // Build a program to manage a dynamic array of integers, focusing on adding elements using pointers and dynamic memory.
 
+
+
+
+
+
+
+
+
 #include <stdio.h>
 #include <stdlib.h>
 
